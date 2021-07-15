@@ -1,0 +1,134 @@
+/* direct tag */
+h1{
+    font-size:80px;
+}
+/* all id */
+#live{
+    background-color: palevioletred;
+    width: 100px;
+    height:20px;
+    padding: 5px;
+}
+#icon{
+    text-align: center;
+    margin-top: 204px;
+}
+#footer{
+    text-align: center;
+}
+/* conmebol copa america */
+.fa-long-arrow-alt-right{
+    align-items: center;
+}
+.copa-container{
+background-color: blue;
+color: whitesmoke;
+width: 100%;
+height: 677px;
+}
+/*-------------- hover system 
+                              --------------*/
+.copa-container:hover img{
+    transition: width 4s linear 1s,height 4s ease 1s,transform 2s;;
+    transform: rotate(360deg);
+}
+.copa{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+.conmebol{
+    margin: 20px;
+    padding: 50px;
+}
+.banner{
+    width: 556px;
+    height: 438px;
+    padding:130px;
+}
+/* player row start */
+
+.player-container{
+    margin-top: 130px;
+}
+.player-row{
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 130px;
+    padding-left: 50px;
+    height: 330px;
+    width: 100%;
+}
+.player-{
+    width: 320px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px 5px #888888;
+    padding:15px;
+}
+.player- img{
+    width: 320px;
+    height: 256px;
+}
+/* media query for tablet */
+@media screen and (max-width:768px) {
+    .copa{
+      grid-template-columns: repeat(1, 1fr);
+     background-color: blue;
+    }
+    .player-container{
+        margin-top: 650px;
+    }
+
+    .player-row{
+        grid-template-columns: repeat(2 , 1fr);
+        height: 775px;
+        width: 100%;
+        
+    }
+    #icon{
+        text-align: center;
+    }
+    #footer-logo{
+        width: 500px;
+    }
+} 
+/* media quieris for mobile type device */
+@media screen and (max-width:488px) {
+    .copa-container{
+        height: 500px;
+        width: 100%;
+    }
+    .copa{
+      grid-template-columns: repeat(1, 1fr);
+     background-color: blue;
+    }
+    .conmebol{
+     margin: 20px;        
+     padding: 20px;
+    
+    }
+    .banner{
+        margin: 20px;        
+        padding: 20px;
+        height: 300px;
+        width: 280px;
+    }
+    .player-container{
+        margin-top: 750px;
+    }
+
+    .player-row{
+        grid-template-columns: repeat(1 , 1fr);
+        height: 1200px;
+        width: 100%;
+        
+    }
+    #icon{
+        text-align: center;
+    }
+    #just-icon{
+        text-align: center;
+    }
+    #footer-logo{
+        width: 300px;
+    }
